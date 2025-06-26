@@ -16,6 +16,7 @@ spec:
       containers:
         - name: frontend
           image: rathijaat001/chat-app:frontend
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
           env:
