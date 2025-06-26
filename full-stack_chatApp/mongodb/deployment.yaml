@@ -4,7 +4,7 @@ metadata:
   name: mongodb
   namespace: chat-app
 spec:
-  relicas: 1
+  replicas: 1
   selector:
     matchLabels:
       app: mongodb
