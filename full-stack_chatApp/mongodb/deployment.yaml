@@ -24,9 +24,9 @@ spec:
             - name: MONGO_INITDB_ROOT_PASSWORD
               value: admin
           volumeMounts:
-            - name: mongo-data
+            - name: mongodb-data
               mountPath: /data/db
       volumes:
         - name: mongodb-data
           persistentVolumeClaim:
-            claimName: mongopvc
+            claimName: mongo-pvc
